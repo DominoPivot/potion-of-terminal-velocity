@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang=en>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width, initial-scale=1">
+<meta name=color-scheme content="dark light">
+<title>Potion of Terminal Velocity</title>
+<link rel=preconnect href="https://fonts.googleapis.com">
+<link rel=preconnect href="https://fonts.gstatic.com" crossorigin>
+<link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap">
+<link rel=stylesheet href="entrypoint.css">
+<script type=module src="entrypoint.js"></script>
+
+<header class=header>
+	<hgroup>
+		<h1>Potion of Terminal Velocity</h1>
+		<p>by DominoPivot</p>
+	</hgroup>
+	<details>
+		<summary>Settings</summary>
+		<div class=settings>
+			<fieldset>
+				<legend>Color scheme</legend>
+				<label><input type=radio name=color-scheme value=system-default checked> System default</label>
+				<label><input type=radio name=color-scheme value=dark-nb> Dark NB</label>
+				<label><input type=radio name=color-scheme value=thors-choice> Thor's Choice</label>
+				<label><input type=radio name=color-scheme value=green-boy> Green Boy</label>
+				<label><input type=radio name=color-scheme value=neon> Purple Neon</label>
+				<label><input type=radio name=color-scheme value=light-web> Blinding Light</label>
+			</fieldset>
+			<fieldset>
+				<legend>Accessibility toggles</legend>
+				<label><input type=checkbox name=reduced-motion> Reduced motion</label>
+			</fieldset>
+		</div>
+	</details>
+	<details>
+		<summary>Credits</summary>
+		<div class=credits>
+			<small>Created by DominoPivot in July 2024 for the occasion of the Pirate Software Game Jam.</small><br>
+			<small>This page uses the <a target=_blank href="https://github.com/tonsky/FiraCode">Fira Code</a> open font.</small>
+		</div>
+	</details>
+</header>
+
+<main>
+	<p>
+		You are an amateur alchemist under the tutelage of an inflexible master. The grumpy old gnome keeps yapping about the fundamentals and never lets you put his teachings to practice. BO-RING!
+	<p>
+		You've decided to take matters into your own hands, and have <em>borrowed</em> his equipment to learn <em>the fun way</em>, through trial and error. It's not without risk, as <strong>any ingredient you add is bound to have unpredictable consequences</strong>, even if they are not immediately apparent.
+	<p>
+		As you were sneaking out of your master's lab with a big heavy chest full of alchemical supplies, you tripped on a toadstool and fell down a chasm. <i>Who even left that here?</i> On the off chance that this pit isn't actually bottomless, now might be a good time to figure out how to craft a potion of resistance to fall damage.
+	<p>
+		You can interact with the world by typing commands in the terminal below, such as <code>LOOK AROUND</code> or <code>DRINK POTION</code>. Good luck!
+
+	<div class=terminal>
+		<div class="error">The game is not yet implemented. This is just a prototype of the interface.</div>
+		<pre class=output-log role=log aria-label="Output log" aria-relevant=additions></pre>
+		<label class=command-line>
+			<span class=command-prompt aria-hidden=true>&gt; </span>
+			<input class=command-input maxlength=78 aria-label="Command line">
+		</label>
+	</div>
+</main>

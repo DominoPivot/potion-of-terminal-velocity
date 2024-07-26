@@ -1,0 +1,101 @@
+.header {
+	margin: 1ch auto;
+    max-width: 80ch;
+    text-align: center;
+}
+
+.settings {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1ch;
+}
+
+.settings fieldset {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+}
+
+.credits {
+	border: 2px solid currentColor;
+	border-radius: 4px;
+	margin-block: 1ch;
+	margin-inline: auto;
+	max-width: 80ch;
+	padding: 1ch;
+}
+
+main {
+	margin: 1ch auto;
+	max-width: 80ch;
+}
+
+.terminal {
+    box-sizing: content-box;
+
+    margin-inline: auto;
+    max-width: 80ch;
+    min-height: 1lh;
+
+    border: 2px solid currentColor;
+    border-radius: 4px;
+    margin-block: 1lh;
+    padding: 1lh 1ch;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+
+    animation: 2s linear infinite scanlines;
+    background-image:
+        repeating-linear-gradient(
+            0deg,
+            #1232   0, #4542 2px,
+            #4142 3px, #2322 7px,
+            #2122 8px, #2022 10px
+        );
+    background-size: 100% 25px;
+}
+
+@keyframes scanlines {
+    0% {
+        background-position-y: 0;
+    }
+    100% {
+        background-position-y: 25px;
+    }
+}
+
+.command-line {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.command-prompt {
+    flex: 0 0 auto;
+}
+
+.command-input {
+    flex: 1 1 78ch;
+
+    appearance: none;
+    background: transparent;
+    border: 0;
+    color: currentColor;
+    font: inherit;
+    line-height: inherit;
+    margin: 0;
+    outline: none;
+    padding: 0;
+}
+
+.error {
+	color: var(--error-color);
+}
+
+.error::before {
+	display: inline;
+	content: "⚠ ";
+}

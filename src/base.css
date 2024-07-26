@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 1rem;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0.67em 0;
+    text-wrap: balance;
+}
+
+kbd,
+label,
+pre,
+samp {
+    font: inherit;
+    line-height: inherit;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    white-space: break-spaces;
+    word-break: break-all;
+}
+
+fieldset {
+    border: 2px solid currentColor;
+    border-radius: 4px;
+}
+
+details>summary {
+    cursor: default;
+    user-select: none;
+}
+
+label {
+    user-select: none;
+}
+
+@media (prefers-reduced-motion) {
+    :root {
+        scroll-behavior: auto !important;
+    }
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}

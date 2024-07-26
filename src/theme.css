@@ -1,0 +1,122 @@
+:root {
+    --background-color: black;
+    --color: #e6e6fa;
+    --interactive-color: yellow;
+    --emphasis-color: yellow;
+	--emphasis-text-shadow: none;
+	--error-color: #ffcccc;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --background-color: white;
+        --color: black;
+        --interactive-color: blue;
+        --emphasis-color: #800080;
+		--error-color: #800000;
+    }
+}
+
+.theme-dark-nb {
+    color-scheme: dark;
+
+	/* if changed copy to :root */
+    --background-color: black;
+    --color: #e6e6fa;
+    --interactive-color: yellow;
+    --emphasis-color: yellow;
+	--error-color: #ffcccc;
+}
+
+.theme-light-web {
+	color-scheme: light;
+
+	/* if changed copy to prefers-color-scheme: light */
+    --background-color: white;
+    --color: black;
+    --interactive-color: blue;
+    --emphasis-color: #800080;
+	--error-color: #800000;
+}
+
+.theme-green-boy {
+    color-scheme: dark;
+
+    --background-color: #002416;
+    --color: #6bffd2;
+    --interactive-color: #00ffff;
+    --emphasis-color: white;
+	--error-color: #eeddcc;
+}
+
+.theme-thors-choice {
+	color-scheme: dark;
+
+	--background-color: black;
+    --color: lime;
+    --interactive-color: lime;
+    --emphasis-color: #bbffbb;
+	--error-color: red;
+	--emphasis-text-shadow: 0 0 10px green;
+}
+
+.theme-neon {
+	color-scheme: dark;
+
+	--background-color: #220022;
+	--color: white;
+	--interactive-color: #f0f;
+	--emphasis-color: #0ff;
+	--error-color: red;
+	--emphasis-text-shadow: 0 0 10px #6622ff;
+}
+
+.reduced-motion {
+    scroll-behavior: auto !important;
+}
+
+.reduced-motion * {
+    animation: none !important;
+    transition: none !important;
+}
+
+:root {
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+
+    background-color: var(--background-color);
+    color: var(--color);
+}
+
+::selection {
+    color: var(--background-color);
+    background-color: var(--interactive-color);
+}
+
+:any-link {
+    color: var(--interactive-color);
+}
+
+:any-link:active {
+    color: var(--emphasis-color);
+}
+
+i,
+em {
+    font-style: inherit;
+    color: var(--emphasis-color);
+	text-shadow: var(--emphasis-text-shadow);
+}
+
+b,
+strong {
+    color: var(--emphasis-color);
+	text-shadow: var(--emphasis-text-shadow);
+}
+
+small {
+    font-size: 14px;
+}

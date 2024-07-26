@@ -1,0 +1,12 @@
+{
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"build": "node build.js"
+	},
+	"devDependencies": {
+		"esbuild": "^0.23.0",
+		"eslint": "^9.7.0"
+	},
+	"dependencies": {}
+}
